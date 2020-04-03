@@ -38,6 +38,10 @@ terraform plan -out plan
 5 - Apply infrastructure from plan
 
 terraform apply plan
+
+6 - Destroy infrastructure
+
+terraform destroy --force
 ```
 
 
@@ -47,4 +51,7 @@ terraform apply plan
 - The terraform get command is used to download and update modules mentioned in the root module.
 
 terraform get
+ 
+terraform get -update
+
 ```
