@@ -44,7 +44,7 @@ terraform apply plan
 ### Update module
 
 ```
-- Execute get for update this module
+- The terraform get command is used to download and update modules mentioned in the root module.
 
 terraform get
 ```
