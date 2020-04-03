@@ -15,30 +15,27 @@ module "vpc" {
 ```
 
 ```
-Terraform module lifecicle
+Terraform module lifecycle
 
-- Init terraform
+1 - Init terraform
 
 terraform init
-```
-```
-- Create a new workspace
+
+2 - Create a new workspace
 
 terraform workspace list
 
 terraform workspace new dev
 
-- Check your new workspace
+3 - Check your new workspace
 
 terraform workspace show
-```
-```
-- Create a plan with plan file
+
+4 - Create a plan with plan file
 
 terraform plan -out plan
-```
-```
-- Apply infrastructure from plan
+
+5 - Apply infrastructure from plan
 
 terraform apply plan
 ```
