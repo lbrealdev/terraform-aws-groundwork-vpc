@@ -39,3 +39,12 @@ terraform plan -out plan
 
 terraform apply plan
 ```
+
+
+### Update module
+
+```
+- Execute get for update this module
+
+terraform get
+```
