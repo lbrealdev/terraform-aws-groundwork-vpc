@@ -7,11 +7,11 @@ output "this_vpc_cidr" {
 }
 
 output "this_subnet_private_cidrs" {
-  value = concat(aws_subnet.private.*.cidr_block, [""])[0]
+  value = compact(concat(aws_subnet.private.*.cidr_block))
 }
 
 output "this_subnet_public_cidrs" {
-  value = concat(aws_subnet.public.*.cidr_block, [""])[0]
+  value = compact(concat(aws_subnet.public.*.cidr_block))
 }
 
 
