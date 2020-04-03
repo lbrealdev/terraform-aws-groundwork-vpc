@@ -3,6 +3,18 @@
 ## Use this module
 
 ```
+provider "aws" {
+  region = "eu-central-1"
+}
+
+module "vpc" {
+  source = "git::github.com/lbrealdev/terraform-aws-groundwork-vpc"
+
+  cidr_block = "172.0.0.0/16"
+}
+```
+
+```
 Terraform module lifecicle
 
 - Init terraform
